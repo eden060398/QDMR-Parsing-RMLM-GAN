@@ -8,7 +8,7 @@ from config import *
 from utils import *
 
 
-def train_gan(filename, gen_warmup=80, desc_warmup=10, gan_epochs=10):
+def train_gan(filename, gen_warmup=5, desc_warmup=1, gan_epochs=5):
     logger = logging.getLogger('myLogger')
     logger.setLevel(logging.INFO)
 
