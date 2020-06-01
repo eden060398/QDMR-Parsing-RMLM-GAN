@@ -1,10 +1,11 @@
 import torch
 from config import *
 from utils import *
+import torch_xla.core.xla_model as xm
 
 
 def eval_model(models_info, test_path, orig_filenames, pred_filenames):
-    device = torch.device("cuda")
+    device = xm.xla_device()
     print(device, "will be used.")
 
     print('Initializing models...')
