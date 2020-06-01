@@ -2,6 +2,7 @@ import re
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import torch_xla.core.xla_model as xm
 from transformers import AutoTokenizer, AutoModel, AutoModelWithLMHead
 
 TRAIN_BOTH = 0
