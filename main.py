@@ -4,10 +4,10 @@ from models import *
 from config import *
 
 if __name__ == '__main__':
-    model = train_gan('/Break-dataset/QDMR/train.csv')
+    model = train_gan('/content/Break-dataset/QDMR/train.csv')
     model.save_internal(seq2seq_path='model.dat')
 
     eval_model([('model.dat', RobertaDecomposer, SEQ_LENGTH)],
-               '/Break-dataset/QDMR/dev.csv',
+               '/content/Break-dataset/QDMR/dev.csv',
                orig_filenames=["orig.csv"],
                pred_filenames=["pred.csv"])
