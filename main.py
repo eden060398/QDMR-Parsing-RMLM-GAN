@@ -9,5 +9,5 @@ if __name__ == '__main__':
 
     eval_model([('model.dat', RobertaDecomposer, SEQ_LENGTH)],
                './Break-dataset/QDMR/dev.csv',
-               orig_filenames=["drive/My Drive/RobertaGAN/eval/model80/orig.csv"],
-               pred_filenames=["drive/My Drive/RobertaGAN/eval/model80/pred.csv"])
+               orig_filenames=["orig.csv"],
+               pred_filenames=["pred.csv"])
